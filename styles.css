@@ -100,3 +100,7 @@ select:focus {
         font-size: 0.9rem;
     }
 }
+
+option {
+    color: #000000;
+}
