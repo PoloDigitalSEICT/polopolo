@@ -102,5 +102,6 @@ select:focus {
 }
 
 option {
+    font-family: "Arial", sans-serif;
     color: #000000;
 }
